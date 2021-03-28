@@ -1,7 +1,9 @@
 import React from "react";
 import ListHead from "./ListHead"
+import Employee from "./Employee"
 
 function EmployeeList(props) {
+    let query = props.query;
     return (
         <div className="card">
           <div className="card-header">
@@ -10,8 +12,28 @@ function EmployeeList(props) {
 
             <div class="container">
   <ListHead
-                    // orderChange={props.orderChange}
+                    orderChange={props.orderChange}
                 />
+                {/* <div> */}
+                {props.results.sort(props.compareFnc)
+                        .filter(data => {
+                            const fullName = `${data.name.first} ${data.name.last}`
+                            if (!query) {
+                                return data
+                            } else if (fullName.toLowerCase().includes(query.toLowerCase())) {
+                                return data
+                            }
+                        })
+                        .map(employee => (
+                <Employee 
+                    photo={employee.picture.thumbnail}
+                    fullName={`${employee.name.first} ${employee.name.last}`}
+                    email={employee.email}
+                    phone={employee.phone}
+                    address={`${employee.location.street.number} ${employee.location.street.name}`}
+                    />
+                ))}
+            </div>
 
     {/* <div class="col-sm">
       One of three columns
@@ -24,16 +46,7 @@ function EmployeeList(props) {
     </div> */}
   {/* </div> */}
 </div>
-          <div className="card-body">
-            <p className="card-text">
-              Aliquip dolore commodo nostrud minim. Cillum do enim non ullamco. Commodo magna eu ex
-              mollit sunt amet fugiat. In irure eu enim id ea sit nostrud incididunt ad
-              adipisicing.Aliquip dolore commodo nostrud minim. Cillum do enim non ullamco. Commodo
-              magna eu ex mollit sunt amet fugiat. In irure eu enim id ea sit nostrud incididunt ad
-              adipisicing.
-            </p>
-          </div>
-        </div>
+          
     );
   }
   

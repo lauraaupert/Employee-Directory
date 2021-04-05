@@ -1,21 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import Search from "./Search/index"
 
 function Header() {
     return (
 
-<div className="container">
-<div className="jumbotron">
-  <h1>Your Project</h1>
+<div className="container" style={{backgroundColor: "teal"}}>
+<div className="jumbotron" style={{backgroundColor: "teal"}}>
+  <h1>Employee Directory</h1>
   <p>
-    Enim adipisicing enim reprehenderit ex ullamco consectetur Lorem laboris magna
-    exercitation. Aliquip reprehenderit magna elit cillum adipisicing dolore aliquip velit.
-    Ipsum ullamco nostrud tempor eu deserunt ipsum incididunt fugiat esse ipsum. Exercitation
-    nostrud exercitation sit ex nostrud aliqua officia magna nostrud deserunt et esse eu
-    deserunt. Non dolor consequat qui ea culpa tempor magna nulla consectetur est occaecat.
+    You can see Employee information here.
   </p>
-  <Search />
-  {/* handler={this.props.handler} /> */}
+  <Search handler={this.props.handler} />
 </div>
 </div>
     );

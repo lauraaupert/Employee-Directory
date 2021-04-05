@@ -16,9 +16,9 @@ class Search extends Component {
     //     this.setState({value: e.target.value});
     //   }
 
-    noEnter = () => {
-        return !(window.event && window.event.keyCode === 13);
-    };
+    // noEnter = () => {
+    //     return !(window.event && window.event.keyCode === 13);
+    // };
 
     // const Search = () => {
     //     const context = useContext(SearchContext);
@@ -38,7 +38,7 @@ class Search extends Component {
                             this.props.handler(e.target.value)
                             console.log(e.target.value);
                         }}
-                        onKeyPress={this.noEnter}
+                        // onKeyPress={this.noEnter}
                         type="text"
                         className="form-control"
                         placeholder="Employee Search"

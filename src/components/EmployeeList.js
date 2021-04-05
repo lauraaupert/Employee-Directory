@@ -5,16 +5,18 @@ import Employee from "./Employee"
 function EmployeeList(props) {
     let query = props.query;
     return (
-        <div className="card">
+      <div className="table">
+        <div className="card" style={{width: "100%"}}>
           <div className="card-header">
             <h3 className="card-title">Employees</h3>
-            </div>
-
-            <div className="container">
-  <ListHead
+          </div>
+          </div>
+          <table>
+            
+              <ListHead
                     orderChange={props.orderChange}
                 />
-                {/* <div> */}
+                <tbody>
                 {props.results.sort(props.compareFnc)
                         .filter(data => {
                             const fullName = `${data.name.first} ${data.name.last}`
@@ -36,18 +38,18 @@ function EmployeeList(props) {
                     key={employee.dob}
                     />
                 ))}
-            </div>
-
-    {/* <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div> */}
-  {/* </div> */}
+            </tbody>        
+          </table>
+  {/* //   // {/* <div class="col-sm">
+  //     One of three columns
+  //   </div>
+  //   <div class="col-sm">
+  //     One of three columns
+  //   </div>
+  //   <div class="col-sm">
+  //     One of three columns
+  //   </div> 
+  // </div> */}
 </div>
           
     );

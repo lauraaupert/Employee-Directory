@@ -33,11 +33,18 @@ class ListHead extends Component {
             }];
 
         return (
-            <div className="row">
+            // <div className="row">
+                  <thead>
+                <tr>
                     {headings.map(header => (
-                        <div className="col-md" style={{fontWeight: "bold"}} key={header.key} scope="col" onClick={this.props.orderChange}>{header.name}</div>
+                        <th key={header.key} scope="col" style={{cursor: "pointer"}} onClick={this.props.orderChange}>{header.name}</th>
                     ))}
-                </div>
+                </tr>
+            </thead >
+                    // {/* {headings.map(header => (
+                    //     <div className="col-md" style={{fontWeight: "bold"}} key={header.key} onClick={this.props.orderChange}>{header.name}</div>
+                    // ))} */}
+                // </div>
         )
     };
 };

@@ -10,7 +10,7 @@ function EmployeeList(props) {
             <h3 className="card-title">Employees</h3>
             </div>
 
-            <div class="container">
+            <div className="container">
   <ListHead
                     orderChange={props.orderChange}
                 />
@@ -28,9 +28,12 @@ function EmployeeList(props) {
                 <Employee 
                     photo={employee.picture.thumbnail}
                     fullName={`${employee.name.first} ${employee.name.last}`}
-                    email={employee.email}
-                    phone={employee.phone}
+                    email={`${employee.email}`}
+                    phone={`${employee.phone}`}
                     address={`${employee.location.street.number} ${employee.location.street.name}`}
+                    nationality={`${employee.nat}`}
+                    age={`${employee.dob.age}`}
+                    key={employee.dob}
                     />
                 ))}
             </div>

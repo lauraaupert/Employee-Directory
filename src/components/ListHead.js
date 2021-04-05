@@ -22,6 +22,14 @@ class ListHead extends Component {
             {
                 key: 5,
                 name: "Address"
+            },
+            {
+                key: 6,
+                name: "Nationality"
+            },
+            {
+                key: 7,
+                name: "Age"
             }];
 
         return (

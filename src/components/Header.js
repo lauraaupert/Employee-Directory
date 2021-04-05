@@ -1,7 +1,8 @@
 import React from "react";
 import Search from "./Search"
 
-function Header() {
+function Header(props) {
+
     return (
 
 <div className="container" style={{backgroundColor: "teal"}}>

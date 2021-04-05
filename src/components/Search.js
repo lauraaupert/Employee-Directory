@@ -1,11 +1,11 @@
-import React, { Component, useRef } from "react";
+import React, { Component } from "react";
 // import React, { useContext } from "react";
 // import SearchContext from "../../utils/SearchContext";
 // import "./style.css";
 
-const Search = () => {
-const inputRef = useRef();
-// class Search extends Component {
+// const Search = () => {
+// const inputRef = useRef();
+class Search extends Component {
     
     // constructor(props) {
     //     super(props);
@@ -26,7 +26,7 @@ const inputRef = useRef();
     // const Search = () => {
     //     const context = useContext(SearchContext);
 
-    // render() {
+    render() {
         return (
             <form className="search" >
                 <div className="form-group text-center">
@@ -38,12 +38,14 @@ const inputRef = useRef();
                     // onChange={e => context.handleOrderChange(e)}
                         // value={this.state.value}
                         onChange={(e) => {
-                        //     this.props.handler(e.target.value)
+                            // this.handleChange(e);
+                            // searchTerm = this.props.handler(e.target.value)
                             console.log(e.target.value);
                         }}
                         // onKeyPress={this.noEnter}
                         type="search"
-                        ref={inputRef}
+                        // value={searchTerm}
+                        // ref={inputRef}
                         className="form-control text-center"
                         placeholder="Search"
                         id="search"
@@ -51,7 +53,7 @@ const inputRef = useRef();
                 </div>
             </form >
         )
-    
+    }
 };
 
 export default Search;

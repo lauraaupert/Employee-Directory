@@ -8,7 +8,7 @@ function Header() {
 <div className="jumbotron" style={{backgroundColor: "teal"}}>
   <h1>Employee Directory</h1>
   <p>
-    You can see Employee information here.
+    You can see Employee information here. Click on a category to sort employees.
   </p>
   <Search handler={this.props.handler} />
 </div>

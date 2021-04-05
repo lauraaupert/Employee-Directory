@@ -1,9 +1,12 @@
-import React, { Component } from "react";
+import React, { Component, useRef } from "react";
 // import React, { useContext } from "react";
 // import SearchContext from "../../utils/SearchContext";
 // import "./style.css";
 
-class Search extends Component {
+const Search = () => {
+const inputRef = useRef();
+// class Search extends Component {
+    
     // constructor(props) {
     //     super(props);
     //     this.state = {value: ''};
@@ -23,7 +26,7 @@ class Search extends Component {
     // const Search = () => {
     //     const context = useContext(SearchContext);
 
-    render() {
+    // render() {
         return (
             <form className="search" >
                 <div className="form-group text-center">
@@ -34,20 +37,21 @@ class Search extends Component {
                     // aria-label="Search"
                     // onChange={e => context.handleOrderChange(e)}
                         // value={this.state.value}
-                        onChange={e => {
-                            this.props.handler(e.target.value)
+                        onChange={(e) => {
+                        //     this.props.handler(e.target.value)
                             console.log(e.target.value);
                         }}
                         // onKeyPress={this.noEnter}
-                        type="text"
-                        className="form-control"
-                        placeholder="Employee Search"
-                        id="employee"
+                        type="search"
+                        ref={inputRef}
+                        className="form-control text-center"
+                        placeholder="Search"
+                        id="search"
                     />
                 </div>
             </form >
         )
-    }
+    
 };
 
 export default Search;

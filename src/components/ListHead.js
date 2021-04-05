@@ -34,8 +34,8 @@ class ListHead extends Component {
 
         return (
             // <div className="row">
-                  <thead>
-                <tr>
+                  <thead style={{backgroundColor: "teal"}}>
+                <tr style={{color: "white"}}>
                     {headings.map(header => (
                         <th key={header.key} scope="col" style={{cursor: "pointer"}} onClick={this.props.orderChange}>{header.name}</th>
                     ))}

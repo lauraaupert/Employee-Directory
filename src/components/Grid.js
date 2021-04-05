@@ -56,7 +56,7 @@ class Grid extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{backgroundColor: "teal"}}>
                 <Header
                     handler={this.handleInputChange} />
                 <EmployeeList

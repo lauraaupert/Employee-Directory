@@ -5,9 +5,9 @@ import Employee from "./Employee"
 function EmployeeList(props) {
     let query = props.query;
     return (
-      <div className="table">
-        <div className="card" style={{width: "100%"}}>
-          <div className="card-header">
+      <div className="table" style={{color: "white"}}>
+        <div className="card" style={{letterSpacing: "15px"}}>
+          <div className="card-header text-center" style={{color: "teal"}}>
             <h3 className="card-title">Employees</h3>
           </div>
           </div>

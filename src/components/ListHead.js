@@ -41,10 +41,6 @@ class ListHead extends Component {
                     ))}
                 </tr>
             </thead >
-                    // {/* {headings.map(header => (
-                    //     <div className="col-md" style={{fontWeight: "bold"}} key={header.key} onClick={this.props.orderChange}>{header.name}</div>
-                    // ))} */}
-                // </div>
         )
     };
 };

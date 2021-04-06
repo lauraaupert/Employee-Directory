@@ -37,12 +37,14 @@ class Search extends Component {
                     // aria-label="Search"
                     // onChange={e => context.handleOrderChange(e)}
                         // value={this.state.value}
-                        onChange={(e) => {
-                            // this.handleChange(e);
-                            // searchTerm = this.props.handler(e.target.value)
-                            console.log(e.target.value);
-                        }}
-                        // onKeyPress={this.noEnter}
+                        // onChange={
+                        //     function handler(e) {e.target.value
+                        // //     (e) => {this.props.handler(e.target.value)
+                        // //     // this.handleChange(e);
+                        // //     // this.props.handler(e.target.value)
+                        //      console.log(e.target.value);
+                        //   }}
+                        onKeyPress={this.noEnter}
                         type="search"
                         // value={searchTerm}
                         // ref={inputRef}

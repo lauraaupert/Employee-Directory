@@ -3,11 +3,26 @@
 
 ## DESCRIPTION
 
-This React app allows the user to see employee information and sort them by name.
+This React app allows the user to see employee information and sort them by name. The search function does not properly work yet, but it will! It populates employees from the randomuser API, 
 
 ## TABLE OF CONTENTS
-    
+[Requirements](#USER)   
+[Questions](#QUESTIONS) 
 [License](#LICENSE)  
+
+
+![image](https://user-images.githubusercontent.com/73617474/113960459-8984e580-97f2-11eb-9a3f-624b36c3b1b1.png)
+
+## REQUIREMENTS <a name="USER"></a>  
+### User Story
+
+* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+
+### Business Context
+
+An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+
+
 ## QUESTIONS <a name="QUESTIONS"></a>
 For additional questions, please get in touch:  
 https://github.com/lauraaupert  

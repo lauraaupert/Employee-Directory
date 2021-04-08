@@ -7,7 +7,7 @@ This React app allows the user to see employee information and sort them by name
 
 ## TABLE OF CONTENTS
 [Requirements](#USER)   
-[Questions](#QUESTIONS) 
+[Questions](#QUESTIONS)  
 [License](#LICENSE)  
 
 
